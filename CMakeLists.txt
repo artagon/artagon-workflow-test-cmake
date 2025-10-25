@@ -9,10 +9,10 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 enable_testing()
 
 # Main executable
-add_executable(hello_c src/main.c)
+add_executable(hello_c c/main.c)
 
 # Test executable
-add_executable(test_hello src/test.c)
+add_executable(test_hello c/test.c)
 
 # Add test
 add_test(NAME HelloTest COMMAND test_hello)
