@@ -70,8 +70,6 @@ jobs:
   test-cpp-default:
     name: Test C++ Default
     uses: artagon/artagon-workflows/.github/workflows/cmake_cpp_ci.yml@feature/update-cache-and-sync-ci
-    with:
-      source-dir: 'cpp'
     secrets: inherit
 
   # Test C++ with C++17 standard
@@ -79,7 +77,6 @@ jobs:
     name: Test C++17
     uses: artagon/artagon-workflows/.github/workflows/cmake_cpp_ci.yml@feature/update-cache-and-sync-ci
     with:
-      source-dir: 'cpp'
       cxx-standard: '17'
     secrets: inherit
 
@@ -88,7 +85,6 @@ jobs:
     name: Test C++20
     uses: artagon/artagon-workflows/.github/workflows/cmake_cpp_ci.yml@feature/update-cache-and-sync-ci
     with:
-      source-dir: 'cpp'
       cxx-standard: '20'
     secrets: inherit
 
@@ -97,7 +93,6 @@ jobs:
     name: Test C++23
     uses: artagon/artagon-workflows/.github/workflows/cmake_cpp_ci.yml@feature/update-cache-and-sync-ci
     with:
-      source-dir: 'cpp'
       cxx-standard: '23'
     secrets: inherit
 
